@@ -11,6 +11,8 @@ h1 {
     text-align: center;
 }
 .nav {
+    display: flex;
+    justify-content: center;
     position: relative;
     overflow: hidden;
     padding: 8px;
