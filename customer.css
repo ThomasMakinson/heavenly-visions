@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    background-color: #1a1c31;
+}
+#customer-list {
+    display: flex; 
+    justify-content: center;
+}
+.customer {
+    border: 2px solid #fff;
+    margin: 10px;
+    padding: 15px;
+    text-decoration: none;
+    color: lightgray;
+}
+.confirmed {
+    border-color: green;
+}
+.unconfirmed {
+    border-color: gray;
+    opacity: 0.75;
+}
+.cancelled {
+    border-color: red;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    background-color: #111220;
+    color: lightgray;
+}
