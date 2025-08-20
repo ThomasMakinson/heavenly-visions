@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Heavenly Visions | Customer Details</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Customer Details for Heavenly Visions Bookings" />
+  <link rel="stylesheet" href="customer.css"/>
+</head>
+<body>
+    <h1>Customer Details</h1>
+
+    <div id="customer-list"></div>
+
+
+    <script>
+        let customers = [
+          { name: "John Doe", date: "10/10/2025", status: "confirmed", phoneNumber: "027-3476-545" },
+          { name: "Jane Doe", date: "3/6/2025", status: "unconfirmed", phoneNumber: "03-472-4498" },
+          { name: "Jack", date: "10/3/2025", status: "unconfirmed", phoneNumber: "03-536-498" },
+          { name: "Jill", date: "10/12/2025", status: "cancelled", phoneNumber: "022-4563-453" },
+          { name: "Bob", date: "10/1/2025", status: "confirmed", phoneNumber: "027-3736-347" },
+          { name: "Bob", date: "10/1/2025", status: "confirmed", phoneNumber: "027-3736-347" }
+        ];
+        
+        function displayCustomer(customer) {
+          let cssClass = ``;
+          let html = 
+          `<div class="customer ${customer.status}">
+            Name: ${customer.name}</br>
+            Date Booked: ${customer.date}</br>
+            Contact Number: ${customer.phoneNumber}</br>
+            Booking Status: ${customer.status}
+          </div>`;
+
+          return html;
+        }
+
+        function showAllCustomers() {
+
+          let customerList = document.getElementById("customer-list");
+          let html = "";
+          customers.forEach(customer => {
+            html += displayCustomer(customer);
+          });
+          customerList.innerHTML = html;
+        }
+
+        showAllCustomers();
+    </script>
+</body>
+</html>
