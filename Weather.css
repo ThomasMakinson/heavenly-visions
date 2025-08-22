@@ -1,0 +1,23 @@
+body 
+{
+    background-image: url('heavenly-visions-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+}
+
+header 
+{
+    text-align: center;
+    font-size: larger;
+    color: rgb(36, 36, 36);
+    background-color: rgb(36, 133, 108);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.weatherwidget-io 
+{
+    margin: 16px;
+    
+}
